@@ -178,6 +178,10 @@ void Plankton::verify_ec(Policy *policy)
         "-n",   // suppress report for unreached states
         suffix.c_str(),
     };
+    for (size_t i = 0; i < sizeof(spin_args) / sizeof(char *); ++i) {//youl
+        Logger::info(spin_args[i]);
+    }
+    Logger::info(" youl ");
 
     // register signal handlers for emulations
     struct sigaction action;
@@ -192,8 +196,8 @@ void Plankton::verify_ec(Policy *policy)
     }
 
     // reset logger
-//    Logger::disable_console_logging();
-//    Logger::enable_file_logging(logfile);
+    Logger::disable_console_logging();
+    Logger::enable_file_logging(logfile);
     Logger::info("Policy: " + policy->to_string());
 
     // duplicate file descriptors
@@ -212,10 +216,7 @@ void Plankton::verify_ec(Policy *policy)
     Stats::set_ec_t1();
 
     // run SPIN verifier
-    for (size_t i = 0; i < sizeof(spin_args) / sizeof(char *); ++i) {//youl
-        Logger::info(spin_args[i]);
-    }
-    Logger::info(" youl ");
+
     spin_main(sizeof(spin_args) / sizeof(char *), spin_args);
     Logger::error("verify_exit isn't called by Spin");
 }
