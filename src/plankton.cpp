@@ -192,8 +192,8 @@ void Plankton::verify_ec(Policy *policy)
     }
 
     // reset logger
-    Logger::disable_console_logging();
-    Logger::enable_file_logging(logfile);
+//    Logger::disable_console_logging();
+//    Logger::enable_file_logging(logfile);
     Logger::info("Policy: " + policy->to_string());
 
     // duplicate file descriptors
