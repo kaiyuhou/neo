@@ -248,6 +248,7 @@ void Plankton::verify_policy(Policy *policy)
         if ((childpid = fork()) < 0) {
             Logger::error("fork()", errno);
         } else if (childpid == 0) {
+            Logger::info("---verify_ec---");
             verify_ec(policy);
         }
 
