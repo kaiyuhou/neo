@@ -182,6 +182,7 @@ void Plankton::verify_ec(Policy *policy)
         Logger::info(spin_args[i]);
     }
     Logger::info(" youl ");
+    printf(" youl L851 \n");
 
     // register signal handlers for emulations
     struct sigaction action;
@@ -195,10 +196,13 @@ void Plankton::verify_ec(Policy *policy)
         sigaction(emulation_sigs[i], &action, nullptr);
     }
 
+    printf(" youl Reset Logger L199 \n");
     // reset logger
     Logger::disable_console_logging();
     Logger::enable_file_logging(logfile);
     Logger::info("Policy: " + policy->to_string());
+
+    printf(" youl After Reset Logger L205 \n");
 
     // duplicate file descriptors
     int fd = open(logfile.c_str(), O_WRONLY | O_APPEND | O_CREAT, 0644);
