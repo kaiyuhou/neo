@@ -216,7 +216,7 @@ void Plankton::verify_ec(Policy *policy)
     Stats::set_ec_t1();
 
     // run SPIN verifier
-
+    Logger::info(" run SPIN verifier youl ");
     spin_main(sizeof(spin_args) / sizeof(char *), spin_args);
     Logger::error("verify_exit isn't called by Spin");
 }
