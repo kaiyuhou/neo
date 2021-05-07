@@ -243,6 +243,9 @@ void Plankton::verify_policy(Policy *policy)
     if (!fs::exists(policy_working_dir)) {
         fs::mkdir(policy_working_dir);
     }
+
+    Logger::info("Working Dir: " + policy_working_dir);
+
     fs::chdir(policy_working_dir);
 
     Stats::set_policy_t1();
@@ -372,7 +375,7 @@ void Plankton::process_switch(State *state) const
 void Plankton::exec_step(State *state)
 {
     int process_id = get_process_id(state);
-    Logger::error("***exec_step***");//youl
+    Logger::error("***exec_step***");//youl, seems this function is not called.
 
     switch (process_id) {
         case pid::forwarding:
