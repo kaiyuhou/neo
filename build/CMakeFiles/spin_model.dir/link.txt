@@ -1,0 +1,2 @@
+/usr/bin/ar qc libspin_model.a CMakeFiles/spin_model.dir/model.c.o
+/usr/bin/ranlib libspin_model.a

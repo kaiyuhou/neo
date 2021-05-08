@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/neo-kaiyu/third_party/xxhash/xxh3.h
+xxhash.h
+/root/neo-kaiyu/third_party/xxhash/xxhash.h
+assert.h
+-
+x86intrin.h
+-
+arm_neon.h
+-
+intrin.h
+-
+intrin.h
+-
+
+/root/neo-kaiyu/third_party/xxhash/xxhash.c
+stdlib.h
+-
+string.h
+-
+assert.h
+-
+xxhash.h
+/root/neo-kaiyu/third_party/xxhash/xxhash.h
+stdint.h
+-
+stdint.h
+-
+xxh3.h
+/root/neo-kaiyu/third_party/xxhash/xxh3.h
+
+/root/neo-kaiyu/third_party/xxhash/xxhash.h
+stddef.h
+-
+stdint.h
+-
+xxhash.c
+/root/neo-kaiyu/third_party/xxhash/xxhash.c
+

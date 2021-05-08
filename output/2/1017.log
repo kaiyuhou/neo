@@ -1,0 +1,6 @@
+[1620431821.150313] [1017] [II] Policy: reachability [ server ] -X-> [ r3 h1 fw h3 h2 s1 r1 r2 ]
+[1620431823.998616] [1017] [II] EC: [ [192.168.2.2, 192.168.2.2] ]
+[1620431823.998684] [1017] [II] dst_port: 80
+[1620431823.998755] [1017] [EE] ***exec_step***
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  ***exec_step***

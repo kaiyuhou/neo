@@ -1,0 +1,13 @@
+# Target labels
+ spdlog
+# Source files and their labels
+/root/neo-kaiyu/build/third_party/spdlog/CMakeFiles/spdlog
+/root/neo-kaiyu/build/third_party/spdlog/CMakeFiles/spdlog.rule
+/root/neo-kaiyu/build/third_party/spdlog/CMakeFiles/spdlog-complete.rule
+/root/neo-kaiyu/third_party/spdlog/spdlog/src/spdlog-stamp/spdlog-install.rule
+/root/neo-kaiyu/third_party/spdlog/spdlog/src/spdlog-stamp/spdlog-mkdir.rule
+/root/neo-kaiyu/third_party/spdlog/spdlog/src/spdlog-stamp/spdlog-download.rule
+/root/neo-kaiyu/third_party/spdlog/spdlog/src/spdlog-stamp/spdlog-update.rule
+/root/neo-kaiyu/third_party/spdlog/spdlog/src/spdlog-stamp/spdlog-patch.rule
+/root/neo-kaiyu/third_party/spdlog/spdlog/src/spdlog-stamp/spdlog-configure.rule
+/root/neo-kaiyu/third_party/spdlog/spdlog/src/spdlog-stamp/spdlog-build.rule
